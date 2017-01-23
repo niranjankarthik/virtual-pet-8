@@ -39,7 +39,7 @@ namespace VirtualPet
             
         }
 
-
+        // pet value start
         public VirtualPet()
         {
             hunger = 5;

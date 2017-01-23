@@ -13,7 +13,7 @@ namespace VirtualPet
 
             string name;
             int userInput;
-
+            // calling from class
             VirtualPet newPet = new VirtualPet();
 
             Console.WriteLine("Welcome to Mouseimon!\n\nYou will be tasked with keeping your precious mouse alive.\n\n");
@@ -23,7 +23,7 @@ namespace VirtualPet
             {
                 name = Console.ReadLine();
             }
-
+            // while loop for mouse to determine if they are getting enough of the fields
             while (true)
             {
 
