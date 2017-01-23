@@ -15,7 +15,6 @@ namespace VirtualPet
         private int thirst;
         private int sickness;
         private int boredom;
-        private bool dead = false;
         
         //  auto implemented properties
         public int Hunger
@@ -47,7 +46,6 @@ namespace VirtualPet
             thirst = 5;
             sickness = 5;
             boredom = 5;
-            dead = false;
         }
 
 
@@ -77,53 +75,6 @@ namespace VirtualPet
             hunger++;
             Console.WriteLine(" Your mouse is less bored");
         }
-        //public bool Alive()
-        //{
-        //    if (hunger < 0)
-        //    {
-        //        Console.WriteLine(" Your mouse died of starvation");
-        //        return true;
-        //    }
-        //    else if (hunger > 10)
-        //    {
-        //        Console.WriteLine(" You over fed your mouse");
-        //        return true;
-        //    }
-        //    else if (thirst < 0)
-        //    {
-        //        Console.WriteLine(" Your mouse ran out of liquids");
-        //        return true;
-        //    }
-        //    else if (thirst > 10)
-        //    {
-        //        Console.WriteLine(" How could you give him so much water!!!");
-        //        return true;
-        //    }
-        //    else if (sickness < 0)
-        //    {
-        //        Console.WriteLine(" You have died of sickness");
-        //        return true;
-        //    }
-        //    else if (sickness > 10)
-        //    {
-        //        Console.WriteLine(" Couldn't keep your mouse alive! That's a real shame");
-        //        return true;
-        //    }
-        //    else if (boredom < 0)
-        //    {
-        //        Console.WriteLine(" Dang! Poor little guy had no friends");
-        //        return true;
-        //    }
-        //    else if (boredom > 10)
-        //    {
-        //        Console.WriteLine(" Too much socialization is never good");
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        // }
-       // }
      }
   }
 
