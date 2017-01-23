@@ -47,22 +47,22 @@ namespace VirtualPet
                 if (userInput == 1)
                 {
                     newPet.Food();
-                    Console.Clear();
+                    
                 }
                 else if (userInput == 2)
                 {
                     newPet.Drink();
-                    Console.Clear();
+                    
                 }
                 else if (userInput == 3)
                 {
                     newPet.Cold();
-                    Console.Clear();
+                    
                 }
                 else if (userInput == 4)
                 {
                     newPet.Crazy();
-                    Console.Clear();
+                    
                 }
                 else
                 {
@@ -71,45 +71,46 @@ namespace VirtualPet
                 }
                 if (newPet.Hunger < 0)
                 {
-                    Console.WriteLine(" Your mouse died of starvation");
+                    Console.WriteLine(" Your mouse was over fed");
                     break;
                 }
                 else if (newPet.Hunger > 10)
                 {
-                    Console.WriteLine(" You over fed your mouse");
+                    Console.WriteLine(" Your mouse died of starvation");
                     break;
                 }
                 else if (newPet.Thirst < 0)
                 {
-                    Console.WriteLine(" Your mouse ran out of liquids");
+                    Console.WriteLine(" How could you give him so much water!!!");
                     break;
                 }
                 else if (newPet.Thirst > 10)
                 {
-                    Console.WriteLine(" How could you give him so much water!!!");
+                    Console.WriteLine("Your mouse ran out of liquids ");
                     break;
                 }
                 else if (newPet.Sickness < 0)
                 {
-                    Console.WriteLine(" You have died of sickness");
+                    Console.WriteLine("Couldn't keep your mouse alive! That's a real shame ");
                     break;
                 }
                 else if (newPet.Sickness > 10)
                 {
-                    Console.WriteLine(" Couldn't keep your mouse alive! That's a real shame");
+                    Console.WriteLine("You have died of sickness ");
                     break;
                 }
                 else if (newPet.Boredom < 0)
                 {
-                    Console.WriteLine(" Dang! Poor little guy had no friends");
+                    Console.WriteLine(" Too much socialization is never good");
                     break;
                 }
                 else if (newPet.Boredom > 10)
                 {
-                    Console.WriteLine(" Too much socialization is never good");
+                    Console.WriteLine("Dang! Poor little guy had no friends ");
                     break;
                 }
             }
+            Console.ReadLine();
         }
     }
 }

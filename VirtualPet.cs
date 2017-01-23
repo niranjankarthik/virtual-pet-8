@@ -54,26 +54,26 @@ namespace VirtualPet
         {
             hunger -= 2;
             thirst--;
-            Console.WriteLine(" You fed your mouse" );
+            Console.WriteLine(" You fed your mouse \n" );
         }
         public void Drink()
         {
             thirst -= 2;
             sickness--;
-            Console.WriteLine("You provided water to your mouse" );
+            Console.WriteLine("You provided water to your mouse\n" );
         }
         public void Cold()
         {
             sickness -= 2;
             boredom++;
             
-            Console.WriteLine("Your mouse is feeling better");
+            Console.WriteLine("Way to go!\n");
         }
         public void Crazy()
         {
             boredom -= 2;
             hunger++;
-            Console.WriteLine(" Your mouse is less bored");
+            Console.WriteLine(" Your mouse is less bored\n");
         }
      }
   }
